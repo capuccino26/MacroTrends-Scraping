@@ -38,8 +38,8 @@ O código utiliza o Firefox como webdriver, será necessário o arquivo geckodri
 ## Utilização
 * O usuário insere os tickers separados por vírgula e inicia o programa;
 * As seguintes mensagens serão exibidas de acordo:
-  * SUCCESS: Quando o ticker foi encontrado na database do Macrotrends e a data foi extraída com sucesso.
-  * EMPTY TICKER: Quando o ticker foi encontrado na database do Macrotrends mas não existe dado disponível.
+  * SUCCESS: Quando o ticker foi encontrado na database do Macrotrends e os dados foram extraídos com sucesso.
+  * EMPTY TICKER: Quando o ticker foi encontrado na database do Macrotrends mas não existem dados disponível.
   * INVALID TICKER: Quando o ticker não foi encontrado na database do MacroTrends.
 * Para os dados extraídos com sucesso o programa irá gerar uma nova pasta em Path chamada "STOCKUS/TICKER" para cada ticker inserido.
 * A pasta contém a tabela com todos os dados brutos e uma figura com os principais dados obtidos.
