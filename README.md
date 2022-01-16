@@ -18,7 +18,7 @@ Scraping and managing data for US Stocks from MacroTrends
 The script uses Firefox as the webdriver, you need to have geckodriver.exe in the path, its already included in the repository but you can download the lastest version from [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 
 ## How-to
-* User insert the tickers separated by comma when asked and leave the program running;
+* User insert the tickers separated by comma when asked and send;
 * The following messages will show accordingly:
   * SUCCESS: When the ticker was found in MacroTrends database and the data were successfully scraped.
   * EMPTY TICKER: When the ticker was found in MacroTrends database but there is no data available.
