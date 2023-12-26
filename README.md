@@ -25,6 +25,9 @@ The script uses Chrome as the webdriver, you need to have chromedriver.exe in th
   * INVALID TICKER: When the ticker was not found in MacroTrends database.
 * For the successfully scraped data the program will create a new folder called STOCKUS/TICKER under Path for each inserted ticker.
 * The folder contains a table with the raw data obtained and a figure with plots of important data.
+* 
+### Tickers from excel
+* It is possible to use the alternate version "MACRO_TRENDS_SCRAPING_TICKERFROMEXCEL.ipynb" to obtain the tickers from an excel file with a column called "Symbol" as the example "NASDAQ.xlsx" attached.
 
 # PT-BR
 ## Sobre
@@ -43,6 +46,9 @@ O código utiliza o Chrome como webdriver, será necessário o arquivo geckodriv
   * INVALID TICKER: Quando o ticker não foi encontrado na database do MacroTrends.
 * Para os dados extraídos com sucesso o programa irá gerar uma nova pasta em Path chamada "STOCKUS/TICKER" para cada ticker inserido.
 * A pasta contém a tabela com todos os dados brutos e uma figura com os principais dados obtidos.
+
+### Tickers de arquivo excel
+* É possível utilizar a versão alternativa "MACRO_TRENDS_SCRAPING_TICKERFROMEXCEL.ipynb" para obtenção dos tickers diretamente de um arquivo com uma coluna "Symbol" como no exemplo anexado "NASDAQ.xlsx".
 
 # Example
   * User inserts: OCN,OCSL,OFED,OFG,OFS,OFSSH
