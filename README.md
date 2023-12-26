@@ -33,7 +33,7 @@ Raspagem e manipulação de dados para ações americanas utilizando o site Macr
 [Repositório](https://github.com/capuccino26/Finance)
 
 ## Pré-requisitos
-O código utiliza o Chrome como webdriver, será necessário o arquivo geckodriver.exe no Path, é recomendado o download da versão mais recente: [ChromeDriver]([https://github.com/mozilla/geckodriver/releases](https://chromedriver.chromium.org/downloads))
+O código utiliza o Chrome como webdriver, será necessário o arquivo geckodriver.exe no Path, é recomendado o download da versão mais recente: [ChromeDriver](https://chromedriver.chromium.org/downloads)
 
 ## Utilização
 * O usuário insere os tickers separados por vírgula e inicia o programa;
