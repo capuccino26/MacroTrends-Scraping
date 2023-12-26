@@ -15,7 +15,7 @@ Scraping and managing data for US Stocks from MacroTrends
 [Repository](https://github.com/capuccino26/Finance)
 
 ## Pre-Requisites
-The script uses Firefox as the webdriver, you need to have geckodriver.exe in the path, its already included in the repository but you can download the lastest version from [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
+The script uses Chrome as the webdriver, you need to have chromedriver.exe in the path, you can download the lastest version from [ChromeDriver]([https://github.com/mozilla/geckodriver/releases](https://chromedriver.chromium.org/downloads))
 
 ## How-to
 * User insert the tickers separated by comma when asked and send;
@@ -26,9 +26,6 @@ The script uses Firefox as the webdriver, you need to have geckodriver.exe in th
 * For the successfully scraped data the program will create a new folder called STOCKUS/TICKER under Path for each inserted ticker.
 * The folder contains a table with the raw data obtained and a figure with plots of important data.
 
-### Tickers from excel
-* It is possible to use the alternate version "MACRO_TRENDS_SCRAPING_TICKERFROMEXCEL.ipynb" to obtain the tickers from an excel file with a column called "Symbol" as the example "NASDAQ.xlsx" attached.
-
 # PT-BR
 ## Sobre
 Raspagem e manipulação de dados para ações americanas utilizando o site MacroTrends
@@ -36,7 +33,7 @@ Raspagem e manipulação de dados para ações americanas utilizando o site Macr
 [Repositório](https://github.com/capuccino26/Finance)
 
 ## Pré-requisitos
-O código utiliza o Firefox como webdriver, será necessário o arquivo geckodriver.exe no Path, já incluso no repositório, porém é recomendado o download da versão mais recente: [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
+O código utiliza o Chrome como webdriver, será necessário o arquivo geckodriver.exe no Path, é recomendado o download da versão mais recente: [ChromeDriver]([https://github.com/mozilla/geckodriver/releases](https://chromedriver.chromium.org/downloads))
 
 ## Utilização
 * O usuário insere os tickers separados por vírgula e inicia o programa;
@@ -46,9 +43,6 @@ O código utiliza o Firefox como webdriver, será necessário o arquivo geckodri
   * INVALID TICKER: Quando o ticker não foi encontrado na database do MacroTrends.
 * Para os dados extraídos com sucesso o programa irá gerar uma nova pasta em Path chamada "STOCKUS/TICKER" para cada ticker inserido.
 * A pasta contém a tabela com todos os dados brutos e uma figura com os principais dados obtidos.
-
-### Tickers de arquivo excel
-* É possível utilizar a versão alternativa "MACRO_TRENDS_SCRAPING_TICKERFROMEXCEL.ipynb" para obtenção dos tickers diretamente de um arquivo com uma coluna "Symbol" como no exemplo anexado "NASDAQ.xlsx".
 
 # Example
   * User inserts: OCN,OCSL,OFED,OFG,OFS,OFSSH
