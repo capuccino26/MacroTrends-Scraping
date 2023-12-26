@@ -15,7 +15,7 @@ Scraping and managing data for US Stocks from MacroTrends
 [Repository](https://github.com/capuccino26/Finance)
 
 ## Pre-Requisites
-The script uses Chrome as the webdriver, you need to have chromedriver.exe in the path, you can download the lastest version from [ChromeDriver][https://github.com/mozilla/geckodriver/releases](https://chromedriver.chromium.org/downloads)
+The script uses Chrome as the webdriver, you need to have chromedriver.exe in the path, you can download the lastest version from [ChromeDriver](https://chromedriver.chromium.org/downloads)
 
 ## How-to
 * User insert the tickers separated by comma when asked and send;
