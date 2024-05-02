@@ -92,14 +92,14 @@ for i in ticker:
             time.sleep(4)
             frb = driver.find_element(By.CSS_SELECTOR, "#contenttablejqxgrid").text
             #remove symbols from variables
-            fsz = fsa.replace(".","").replace("$","").replace(",","")
-            fsx = fsb.replace(".","").replace("$","").replace(",","")
-            bsz = bsa.replace(".","").replace("$","").replace(",","")
-            bsx = bsb.replace(".","").replace("$","").replace(",","")
-            cfz = cfa.replace(".","").replace("$","").replace(",","")
-            cfx = cfb.replace(".","").replace("$","").replace(",","")
-            frz = fra.replace(".","").replace("$","").replace(",","")
-            frx = frb.replace(".","").replace("$","").replace(",","")
+            fsz = fsa.replace("$","").replace(",","")
+            fsx = fsb.replace("$","").replace(",","")
+            bsz = bsa.replace("$","").replace(",","")
+            bsx = bsb.replace("$","").replace(",","")
+            cfz = cfa.replace("$","").replace(",","")
+            cfx = cfb.replace("$","").replace(",","")
+            frz = fra.replace("$","").replace(",","")
+            frx = frb.replace("$","").replace(",","")
             dz = da.replace("$","").replace(".","")
             dx = db.replace("$","").replace(".","")
             #split variables into lists
@@ -120,25 +120,40 @@ for i in ticker:
             last_key = None
             fszsr = {}
             for i in fszs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                print(i)
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in fszsr:
                     fszsr[last_key].append(i)
                 else:
-                    fszsr[last_key] = [i] 
+                    fszsr[last_key] = [i]
+                print(i)
             last_key = None
             fsxsr = {}
             for i in fsxs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in fsxsr:
                     fsxsr[last_key].append(i)
                 else:
                     fsxsr[last_key] = [i]
             last_key = None
+            print(fsxsr)
             bszsr = {}
             for i in bszs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in bszsr:
                     bszsr[last_key].append(i)
@@ -147,7 +162,11 @@ for i in ticker:
             last_key = None
             bsxsr = {}
             for i in bsxs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in bsxsr:
                     bsxsr[last_key].append(i)
@@ -156,7 +175,11 @@ for i in ticker:
             last_key = None
             cfzsr = {}
             for i in cfzs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in cfzsr:
                     cfzsr[last_key].append(i)
@@ -165,7 +188,11 @@ for i in ticker:
             last_key = None
             cfxsr = {}
             for i in cfxs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in cfxsr:
                     cfxsr[last_key].append(i)
@@ -174,7 +201,11 @@ for i in ticker:
             last_key = None
             frzsr = {}
             for i in frzs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in frzsr:
                     frzsr[last_key].append(i)
@@ -183,7 +214,11 @@ for i in ticker:
             last_key = None
             frxsr = {}
             for i in frxs:
-                if not (i.isnumeric() or i == '-' or i.startswith('-')):
+                try:
+                    i=float(i)
+                except:
+                    i=i
+                if not (isinstance(i,float) or i == '-' or i.startswith('-')):
                     last_key = i
                 elif last_key in frxsr:
                     frxsr[last_key].append(i)
